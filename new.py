@@ -1,11 +1,9 @@
 import cv2
 import matplotlib.pyplot as plt
-
-# Caminho da imagem
-path = 'C:/Users/ALUNO SESI E SENAI.MATRIZ/Desktop/Luiza/histograma/images/image1.jpg'
+from path import image1, image2, image3, image4
 
 # Ler imagem em escala de cinza
-img = cv2.imread(path, cv2.IMREAD_GRAYSCALE)
+img = cv2.imread(image1, cv2.IMREAD_GRAYSCALE)
 
 # Inverter imagem
 img_inverted = 255 - img

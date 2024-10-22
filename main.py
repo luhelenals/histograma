@@ -2,12 +2,12 @@ import numpy as np
 import cv2
 import matplotlib.pyplot as plt
 import glob
+from path import path
 
 # Array de tuples com as imagens editadas
 imageArr = []
 
 # Read image 'image1.jpg' as grayscale
-path = 'C:/Users/ALUNO SESI E SENAI.MATRIZ/Desktop/Luiza/images/*'
 for file in glob.glob(path):
     img = cv2.imread(file, cv2.IMREAD_GRAYSCALE)
 
